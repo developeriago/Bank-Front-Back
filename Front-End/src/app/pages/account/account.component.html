@@ -1,0 +1,33 @@
+<mat-card>
+
+    <mat-toolbar color="#DDE0E2" >
+      <p align="center">Depositar</p>
+    </mat-toolbar>
+
+  <mat-card-content>
+    <form [formGroup]="form" class="min-width">
+
+      <mat-form-field class="full-width">
+        <mat-label>CPF</mat-label>
+        <input matInput formControlName="cpf" placeholder="000.000.000.00">
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill" floatLabel="always">
+        <mat-label>Valor</mat-label>
+        <input matInput formControlName="valor" type="number" class="example-right-align" placeholder="0">
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+        <mat-label>Operação</mat-label>
+        <input matInput formControlName="operacao" value="deposito">
+      </mat-form-field>
+
+    </form>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-raised-button (click)="deposito()" color="primary">Depositar</button>
+    <button mat-raised-button [routerLink]="['/dashboard']"  >Cancelar</button>
+  </mat-card-actions>
+
+</mat-card>

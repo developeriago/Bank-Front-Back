@@ -1,0 +1,59 @@
+:host ::ng-deep {
+    .sing {
+        @apply bg-gray-50 h-screen flex items-center justify-center;
+    }
+
+    .sing-container {
+        @apply py-8 px-4 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16;
+    }
+
+    .sing-info {
+        @apply flex flex-col justify-center;
+        h1 {
+            @apply mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl;
+        }
+
+        p {
+            @apply mb-6 text-lg font-normal text-gray-500 lg:text-xl;
+        }
+    }
+
+    .sing-form {
+        @apply w-full p-6 space-y-8 sm:p-8 bg-white rounded-lg shadow-xl;
+    }
+
+    .form-group {
+        @apply grid md:grid-cols-2 gap-4 md:gap-6;
+    }
+
+    .form-label {
+        @apply block mb-2 text-sm font-medium text-gray-900;
+    }
+
+    .form-input {
+        @apply bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5;
+    }
+
+    .remember {
+        @apply font-medium text-gray-500;
+    }
+
+    .forget {
+        @apply ml-auto text-sm font-medium text-blue-600 hover:underline;
+    }
+
+    .btn {
+        @apply w-full px-5 py-3 text-base font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 sm:w-auto;
+    }
+
+    .btn-link {
+        @apply text-blue-600 hover:underline font-medium text-lg inline-flex items-center;
+    }
+
+    .form-sing {
+        @apply text-sm font-medium text-gray-900;
+        a {
+            @apply text-blue-600 hover:underline;
+        }
+    }
+}

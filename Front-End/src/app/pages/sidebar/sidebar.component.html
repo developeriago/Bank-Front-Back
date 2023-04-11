@@ -1,0 +1,44 @@
+<button type="button" class="nav-toggle">
+    <span class="sr-only">Open sidebar</span>
+    <i class="ri-menu-2-line"></i>
+</button>
+
+<aside class="sidebar">
+    <div class="menu">
+        <a href="" class="brand h-16 mt-3">
+            <img src="https://rafasgeek.com.br/wp-content/uploads/2021/08/Business-bank-account-e1534519443766.jpeg.optimal.jpeg" class="h-6 mr-3 sm:h-7" alt="Flowbite Logo" />
+            <span class="brand-name">Tivic Bank</span>
+        </a>
+        <ul class="space-y-2 font-medium">
+            <li>
+                <a [routerLink]="['/dashboard']" class="side-link active">
+                    <i class="ri-dashboard-line"></i>
+                    <span class="side-name">Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/conta-bancaria']" class="side-link">
+                    <i class="ri-bank-fill"></i>
+                    <span class="side-name">Depositar</span>
+                </a>
+            </li>
+
+            <li>
+                <a [routerLink]="['/login']" class="side-link">
+                    <i class="ri-login-box-line"></i>
+                    <span class="side-name">Saque</span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/login/cadastrar']" class="side-link">
+                    <i class="ri-logout-box-r-line"></i>
+                    <span class="side-name">Sair</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</aside>
+
+<div class="p-4 sm:ml-64">
+    <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,38 @@
+<section class="sing">
+
+    <div class="sing-container">
+
+        <div class="sing-info" align="center">
+
+            <h1>Tivic Bank</h1>
+            <h1>Seja Bem Vindo!</h1>
+
+        </div>
+
+        <div class="sing-form">
+
+            <h2 class="text-2xl font-bold text-gray-900" align="center">
+                Acessar Conta
+            </h2>
+
+            <form class="mt-8 space-y-6" [formGroup]="form">
+                <div>
+                    <label class="form-label">CPF</label>
+                    <input type="email" class="form-input" placeholder="000.000.000.00" required formControlName="cpf">
+                </div>
+                <div>
+                    <label class="form-label">Senha</label>
+                    <input type="password" placeholder="••••••••" class="form-input" required formControlName="senha">
+                </div>
+
+                <button type="submit" class="btn" (click)="login()">Acessar Conta</button>
+                <div class="form-sing">
+                    Ainda não possui conta? <a [routerLink]="['/login/cadastrar']">Faça a sua aqui!</a>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
